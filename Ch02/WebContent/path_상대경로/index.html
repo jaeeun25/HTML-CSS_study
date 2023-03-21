@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 
+
+	1) 절대경로
+		; http://로 시작되는 웹사이트의 주소(url)를 사용해서 파일장소를 지정하는 방식
+		; http://loacalhost:8080/프로젝트명/패키지명/파일명.html
+
+	2) 상대경로
+		; 현재 파일로 부터 목적파일까지 상대적인 위치관계를 지정하는 방식
+
+			루트계층		제1계층		제2계층		제3계층
+			-----------------------------------------
+			index.html
+			aaa ------- A.html	(2.B로 이동)
+				   |
+				   ---- A2.html	(1.A로 이동)
+				   |
+				   -----bbb------- B.html	(3.C로 이동)
+							 |
+							 ------ ccc ------- C.html	(4.여기에서 D이동, B이동, A2이동)
+
+			ddd ------- D.html	(5. 여기에서 C로 이동)
+
+		- 작성법
+			. 상위계층으로 이동:	../
+			. 동일계층으로 이동:	./
+			. 하위계층으로 이동:	/
+			
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h3>상대경로로 파일을 호출합니다.</h3>
+		<hr><br><br>
+
+		<ul>
+			<li><a href="./aaa/A.html">A</a></li>
+			<li><a href="./aaa/A2.html">A2</a></li>
+			<li><a href="./aaa/bbb/B.html">B</a></li>
+			<li><a href="./aaa/bbb/ccc/C.html">C</a></li>
+			<li><a href="./ddd/D.html">D</a></li>
+		</ul>
+	</body>
+</html>
