@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- 
+	이미지 링크 표현
+		<img src="절대경로 or 상대경로"
+			 alt="이미지 설명"
+			 width="크기"		// %, 픽셀
+			 height=""
+			 border="이미지 테두리 지정">
+
+	이미지 종류
+		. gif: 그래픽, 256색상만 지원, 투명배경 지원, 용량 작다, 애니메이션 지원
+		. jpg: 트루컬러 지원, 용량 작다, 사진이미지에 적합
+		. png: 트루컬러 지원, 투명배경 지원, 웹전용 이미지, 화면표시 속도가 jpg에  비해 빠르다
+
+	이미지 고려사항
+		. 이미지가 많아질수록 무거워진다 >> 그래픽화, 글자는 웹폰트 지원 활용 등
+		. 자바스크립트에서.. 이미지를 먼저 읽고 로딩하는 절차로 구현하는게 좋다
+
+	이미지 활용
+		. 이미지
+		. 이미지 버튼
+
+	이미지 적용
+		. body에 적용하면.. 배경화면으로 지정된다
+ -->
+ 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>이미지 추가</title>
+	</head>
+	<body style="background-image: url('./img/galaxy1.jpg');">
+		<h1>내가 좋아하는 이미지 가져오기</h1>
+		<img src="./img/galaxy2.jpg" alt="galaxy2" width="500" height="400">
+		<img src="./img/galaxy3.jpg" alt="galaxy3" width="600" height="500">
+		<img src="./img/galaxy4.jpg" alt="galaxy4" width="400" height="300">
+		<!-- 인터넷에 있는 이미지 링크로도 이미지를 가져올수있다. -->
+		<img src="data:image/jpeg;base64,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" alt="galaxy5">
+	</body>
+</html>
