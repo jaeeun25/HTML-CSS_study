@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+	웹 폼
+		; 웹 페이지를 통해서 사용자 입력을 받는 웹 폼(또는  폼)이라 한다.
+
+		- form태그 속성
+			. action: 입력받은 데이터를 어디로 보낼 것인가?
+						   받은 데이터를 처리할 서버응용프로그램
+			. method: 폼 데이터를 웹서버에 전송하는 방식
+			. target: 웹 서버 응용프로그램으로 부터 전송받은 데이터를 출력할 윈도우 이름
+			. enctype: 폼 데이터를 웹 서버로 전송할 때 암호화 방식 지정
+
+		- 폼의 종류(form 안에 작성)
+			. textarea
+			. radiobox
+			. checkbox
+			. input
+				- button: 전송, 이벤트 처리의 버튼 용으로 사용.. 버튼을 사용할 때는 타입을 버튼으로 명시할 것
+				- text: 한줄 텍스트 입력창
+				- password: 암호 입력을 위한 한줄 테스트 입력창
+				- image: 이미지 버튼
+				- button: 버튼
+				- checkbox: 체크박스
+				- radio: 라디오버튼
+				- month|week|date|time|datetime|datetime-local
+				- number|range: 스핀버튼과 슬라이드바로 편리한 숫자 입력창
+				- color: 색입력을 쉽게 하는 컬러 다이얼로그
+				- email|url|tel|search: 형식 검사 기능
+				- file: 로컬 컴퓨터의 파일을 선택하는 폼 요소
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form action="#" name="log_fo" method="get" target="" enctype="">
+			
+			사용자 ID: <input type="text" value="" size="15"><br>
+			비밀번호&nbsp;: <input type="password" value="" size="15">
+
+			<input type="submit" value="전송" > &nbsp;
+			<input type="reset" value="취소">
+		</form>
+
+		
+
+		<hr>
+
+		<form name="search_fo"
+			  action="https://search.naver.com/search.naver?"
+			  method="get">
+			검색단어: <input type="text" list="중국음식" name="query"><br>
+
+			<datalist id="중국음식">
+				<option>짜장면</option>
+				<option>짬뽕</option>
+				<option>탕수육</option>
+			</datalist>
+			
+			검색하기: <input type="submit" value="검색">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body align="center">
+		<h3>회원등록</h3>
+		<hr size="3" width="800">
+
+		<table border="1">
+			<tr>
+				<td>이  름</td>
+				<td><input type="text" size="10"></td>
+			</tr>
+			<tr>
+				<td>성  별</td>
+				<td>			<!-- name값은 같게, value는 넘기는 값을 의미 -->
+					<input type="radio" name="gender" value="여자" checked>여자&nbsp;
+					<input type="radio" name="gender" value="남자">남자
+				</td>
+			</tr>
+			<tr>
+				<td>취  미</td>
+				<td>			<!-- name값은 같게, value는 넘기는 값을 의미 -->
+					<input type="checkbox" name="hobby" value="게임">게임&nbsp;
+					<input type="checkbox" name="hobby" value="영화">영화&nbsp;
+					<input type="checkbox" name="hobby" value="독서">독서&nbsp;
+					<input type="checkbox" name="hobby" value="놀기">놀기&nbsp;
+					<input type="checkbox" name="hobby" value="잠자기">잠자기
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="등록">&nbsp;&nbsp;
+					<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

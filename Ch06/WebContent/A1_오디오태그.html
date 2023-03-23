@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 
+	미디어 삽입
+		. 플러그인을 설치해서 들어야 했다.
+		. HTML5에서 audio, video태그를 표준화 했다.
+		* 비표준화 된 태그: embed, object
+
+		. 오디오 태그
+			(방법1)
+				<audio src="오디오 파일" controls autoplay loop>
+					이 태그를 지원하지 않는 브라우저입니다.
+				</audio>
+			(방법2)
+				<audio src=" " controls autoplay loop>
+					<source src=" " type="audio/mpeg">
+					<source src=" " type="audio/ogg">
+				</audio>
+			-> controls: 조절패널 보일지 말지(시작, 멈춤, 일시멈춤 등)
+			-> autoplay: 자동재생
+			-> loop: 반복 재생
+
+	. MIME(마임) - Mutipurpose Internet Main Extenstion
+		- http프로토콜은 텍스트로 데이터를 주고받는다.
+		- 전송절차
+			(메일송신자) - 클라이언트
+			비-ASCII데이터 > [MIME변환] > ASCII데이터 > >>
+
+			    >>> ---- ASCII데이터 ---- >>>
+
+			(메일수신자) - 서버
+			ASCII데이터 > [MIME역변환] >> 비-ASCII데이터
+
+		- MIME
+				타입	/	서브타입;매개변수			예제
+				-------------------------------
+				text	plain			text/plain
+										text/html
+										text/css
+										text/javascript
+										(setContentType("text/html"))
+				image	gif, jpeg		image/gif, image/jpeg
+				video	mpeg			video/mpeg, video/webm
+				audio					audio/midi, audio/mpeg, audio/webm, audio/ogg
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h3>오디오 활용</h3>
+		<audio src="" controler loop autoplay>
+			 지원되지 않는 브라우저입니다.
+		</audio>
+		<hr>
+		<audio controls loop preload>		<!-- preload: 페이지 로드될 때 오디오 파일도 같이 로드되어야 하는지 여부 및 방법 명시 -->
+			<source src="" type="audio/ogg">
+			<source src="" type="audio/mpeg">
+				지원되지 않는 브라우입니다.
+		</audio>
+	</body>
+</html>

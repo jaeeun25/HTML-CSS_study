@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<h3>데이터 목록을 가진 입력창 만들기</h3>
+		<hr>
+		<p>
+			예전에는 자바스크립트로 만들었지만 HTML5에 와서는 datalist태그를 <br>
+			활용하여 만들 수 있다.
+		</p><br><br>
+
+		국가이름: <input type="text" list="countires">
+				<datalist id="countires">	<!-- input에 쓴 list 값과 id 값이 동일해야 함 -->
+					<option value="대한민국">
+					<option value="스위스">
+					<option value="브라질">
+					<option value="미국">
+				</datalist>
+		<br>
+
+		<form name="search" action="https://search.naver.com/search.naver?" method="get">
+			가보고싶은 여행지: <input type="text" list="tour" name="query">
+						<datalist id="tour">
+							<option value="미국">
+							<option value="일본">
+							<option value="이탈리아">
+							<option value="이집트">
+						</datalist>
+			
+			<input type="submit" value="검색">
+		</form>
+	</body>
+</html>
