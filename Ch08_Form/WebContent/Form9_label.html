@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<form>
+			<!-- label을 사용하면 label에 적은 글자까지 input과 동일한 영역으로 잡혀서 글자를 눌러도 input을 누른 것과 동일한 효과 발생-->
+			<!-- 방식1 -->
+			<label>사용자 아이디:
+				<input type="text" size="10" value="">
+			</label>
+			
+			<br><br>
+
+			<!-- 방식2 -->
+			<label for="pass">비밀번호:</label>
+			<input type="password" size="10" value=""><br>
+			<input id="pass" type="password" size="10" value="">
+
+			<br><br>
+
+			<input type="submit" value="완료">
+		</form>
+	</body>
+</html>

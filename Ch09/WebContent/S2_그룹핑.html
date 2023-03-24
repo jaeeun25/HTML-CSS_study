@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			#s1{background-color: #abf200;}		/* " "없고 ;으로 구분 */
+			#s2{background-color: #5cd1e5;}
+			#s3{background-color: #f361a6;}
+			#s4{background-color: #f56789; width: 200px; height: 200px; text-align: center;}	/* 단위 필수 */
+
+			#p1{background-color: #ff0000;}
+			#p2{background-color: #ffa7a7;}
+			#p3{background-color: #d9418c;}
+			#p4{background-color: #abf200; width: 200px; height: 200px;}	/* width, height 안먹힘 */
+		
+			p{font-size: 30px;}
+		</style>
+	</head>
+	<body>
+		<p>div: 블록형식으로 공간의 영역을 한 줄로 분할해 줍니다. 자동 줄바꿈이 된다.</p>
+		<p>span: 인라인 형식으로 입력하는 내용만큼만 공간을 분할해 준다. 자동 줄바꿈이 안된다.</p>
+		<br>
+		<p>블록형식의 div는 스타일을 자유롭게 정의할 수 있지만</p>
+		<p>인라인형식의 span은 태그 안의 내용을 기준으로만 너비와 높이가 결정된다.</p>
+		<p>따라서 별도로 크기를 조절할 수 없으며 오직 좌우바깥 여백만 설정할 수 있다.</p>
+
+		<hr><br>
+		<div id="s1">하늘</div>
+		<div id="s2">바다</div>
+		<div id="s3">섬</div>
+		<div id="s4">구름</div>
+
+		<hr>
+
+		<span id="p1">봄</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="p2">여름</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<span id="p3">가을</span>&nbsp;&nbsp;&nbsp;&nbsp;
+		<p>올 <span id="p4">겨울</span>에는 꼭 여행을 갈겁니다.</p>
+	</body>
+</html>

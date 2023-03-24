@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>상품 주문서</title>
+	</head>
+	<body>
+		<form style="width: 320px; margin: 0 40%; padding: 10px; border: 1px solid black;">
+			<h2 align="center">상품 주문서</h2>
+			
+			<fieldset>
+				<legend>개인정보</legend>
+				<label><p>이&nbsp;&nbsp;&nbsp;름 <input type="text" size="26" maxlength="10"></p></label>
+				<label><p>
+					연락처 
+					<input type="text" size="3" maxlength="3"> -
+					<input type="text" size="4" maxlength="4"> -
+					<input type="text" size="4" maxlength="4">
+				</p></label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>배송정보</legend>
+				<label><p>주&nbsp;&nbsp;&nbsp;소 <input type="text" size="26"></p></label>
+				<label><p>
+					연락처 
+					<input type="text" size="3" maxlength="3"> -
+					<input type="text" size="4" maxlength="4"> -
+					<input type="text" size="4" maxlength="4">
+				</p></label>
+				<label>
+					메&nbsp;&nbsp;&nbsp;모&nbsp;
+					<textarea rows="5" cols="28" wrap="hard" style="vertical-align: top;"></textarea>		<!-- vertical-align: top;으로 메모라는 제목 위로 올 -->
+				</label>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>주문정보</legend>
+				<label><p>제품명 <input type="text" size="26"></p></label>
+				<label><p>수&nbsp;&nbsp;&nbsp;량 <input type="text" size="26" maxlength="10"></p></label>
+				<p>
+					<label>일반배송<input type="radio" name="delivery" value="일반배송"></label>&nbsp;&nbsp;
+					<label>특급배송<input type="radio" name="delivery" value="특급배송"></label>
+				</p>
+			</fieldset>
+			<br>
+			<input type="submit" value="주문" style="width: 100%; background-color: pink;">
+		</form>
+	</body>
+</html>
