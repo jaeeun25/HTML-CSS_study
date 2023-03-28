@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+	p{
+		font-size: 30px;
+		font-family: 궁서체,굴림체;		/* 첫번째 글씨체가 없는경우 두번째 글씨체로 대체 */
+	}
+	span{
+		background-color: antiquewhite;
+	}
+
+	div{
+		border: 20px solid blue;
+	}

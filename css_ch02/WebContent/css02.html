@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#list{
+				background-color: lavenderblush;
+				font-size: 20px;
+			}
+			ul>li+ul>li+ul>li{color: blue;}/* +는 형제 */
+			ul p{color:red;}
+			ul+li{color:green;}	/* 형제는 바로 자기다음(아래)를 가리킴 */
+			
+
+		</style>
+	</head>
+	<body>
+		<ul id="list">
+			<li>HTML</li>
+			<ul>
+				<li>첫 번째 리스트 안에 리스트</li>
+				<ul>
+					<li>제일 안쪽 리스트</li>
+					<p>p태그입니다.</p>
+				</ul>
+				<li class="a">두번째 리스트 안에 리스트</li>
+				<p>오늘은 월요일 입니다.</p>
+			</ul>
+			<li class="a">CSS</li>
+			<li>JAVASCRIPT</li>
+		</ul>
+	</body>
+</html>

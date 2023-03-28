@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+	선택자(Selector)
+		. 어디를 꾸며줄까?
+		. 형식
+			선택자{ 속성: 속성값; }
+
+		. 종류
+			- 타입선택자	: 태그{속성: 속성값;}
+			- 그룹선택자	: 태그,태그,태그{속성, 속성값;}
+			- id선택자	: #아이디{속성: 속성값;}	- 그 페이지에 유일하게 사용할 
+			- class선택자	: .클래스{속성: 속성값;}	- 그 부류를 선택해서 적용
+			- 혼합선택자	: 태그.클래스{속성: 속성값;}
+			- 유니버설선택자	: *{ } 				- 초기화에 주로 사용
+			- 자식선택자	: 태그 > 자식{속성: 속성값;}
+			- 인접선택자	: 태그 + 태그{속성: 속성값;}	- 형제
+			- 문맥선택자	: 기준태그 자손태그{속성: 속성값;}
+			- 속성선택자	: 태그[속성="값"] {속성: 속성값;}, 태그[속성]{ }
+			- 가상클래스 선택자 - 약 40여종
+				(마우스)  태그:hover{속성: 속성명;} - 링크된 글자에 마우스가 닿았을 때
+						태그:active{ } - 마우스를 누르고 있을 때의 스타일
+				(폼요소)	태그:focus{ } - 폼요소가 키보드나 마우스 클릭으로 포커스를 받을 때 스타일
+				(링크)	a:visited{ } - 링크된 글자를 눌러서 해당페이지를 방문했을 때의 속성
+						a:link{ } - 방문하지 않은 링크의 스타일
+				(블록)	:first-letter{ }	- 첫글자의 스타일 적용
+						:first-line{ }		- 첫라인의 스타일 적용
+				(구조)	:nth-child(even){ }	- 짝수번째 모든 자식태그에 스타일
+						:nth-child(n){ }	- n번째 자식태그 스타일 적용
+						:first-child{ }
+						:last-child{ }
+						:before{ }			- 요소의 앞에 배치하는 가상요소(태그처럼 만들어서 추가)
+						:after{ }			- 요소의 뒤에 배치하는 가상요소
+		
+		* id와 class가 동시에 동일한 사양을 적용했다면, id로 적용된 속성이 우선 적용된다.
+		* class는 공백으로 여러개의 클래스를 지정할 수 있다. > 호출할 때는 개별적으로 호출 가능하다.
+-->
+ <html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			p#style1{font-size: 15px; color: red;}
+			#style3{font-size: 20px;}
+			font#style3{font-size: 35px; color: blue;}
+			#style2{font-size: 30px; color:aqua;}
+
+			a:link{color: red;}
+
+			/* div자손 span의 글자색을 오렌지색으로 글자크기는 30px로 */
+			div span{
+				color: orange;
+				font-size: 30px;
+			}
+
+			.a{
+				font-size: 25px;
+				font-weight: bolder;
+			}
+			.b{	/* id로 먼저 글씨색으로 red를 줘서 blue는 먹히지 않음 */
+				color: blue;
+				background-color: yellow;
+			}
+			.c{
+				color: green;
+				background-color: yellowgreen;
+			}
+
+			
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			<!-- class에 공백 주고 여러개 설정 가능 -->
+			<p id="style1" class="a b">화날때는 <span id="s">대답</span>하지 않기</p>
+			<p id="style2">기쁠때는 약속하지 않기</p>
+			<p id="style3" class="a c">슬플때는 <span> 결심</span>하지 않기</p>
+			<font id="style3">항상 마음에 새기며 살기를..</font><br>
+			
+			<a href="">연결</a>
+		</div>
+	</body>
+</html>

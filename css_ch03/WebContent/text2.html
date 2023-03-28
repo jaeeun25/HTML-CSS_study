@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 
+	.font-family	: Helvetica, sans-serif
+	.letter-spacing	: 글자 간격
+	.word-spacing	: 단어 간격
+	.line-height	: 줄 간격
+	.text-align		: 텍스트의 수평정렬
+	.vertical-align	: 텍스트의 수직 정렬
+	.text-indent	: 들여쓰기
+	.text-decoration: 텍스트 장식 지정
+	.text-transform	: 대소문자 전환
+
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#main{font-size: 16px; letter-spacing: -0.1em;}
+			#main :first-child:first-letter{
+				font-size: 50pt;
+				color: #00f;
+				background-color: yellow;
+			}
+			#main :nth-child(2){letter-spacing: 1em;}
+			#main :nth-child(3){letter-spacing: 1rem;}
+
+			/* <hr>이 있어서 번호가 하나씩 밀림 */
+			#main :nth-child(2n+5){line-height:2em; word-spacing: 2em;}
+			#main :nth-child(5){text-indent: 30px;}			/* <hr>이 있어서 5번으로 밀림 */
+			#main :nth-child(6){text-decoration: underline;}
+			#main :last-child{text-transform:uppercase;}
+		</style>
+	</head>
+	<body id="main">
+		<!-- 
+			. body에 글자크기 16px, 글자 간격을 -0.1em
+			. 1줄: 첫번째 글자 1자를 50pt, blue, 배경은 노란색
+			. 2줄: 글자 간의 간격을 1em
+			. 3줄: 글자 간의 간격을 1rem
+
+			. 4~6줄: 짝수 줄의 줄 간격 높이를 2em, 단어 간격을 2em
+			. 4줄:	마지막줄을 들여쓰기해본다.
+			. 5줄:	밑줄 긋기
+			. 6줄:	word 소문자를 대문자로
+		 -->
+		<p>letter(글자)간의 간격을 조정해 봅니다.</p>
+		<p>letter(글자)간의 간격을 조정해 봅니다.</p>
+		<p>letter(글자)간의 간격을 조정해 봅니다.</p>
+		
+		<hr>
+		<p>word(단어)간의 간격을 조정해 봅니다.</p>
+		<p>word(단어)간의 간격을 조정해 봅니다.</p>
+		<p>word(단어)간의 간격을 조정해 봅니다.</p>
+	</body>
+</html>
