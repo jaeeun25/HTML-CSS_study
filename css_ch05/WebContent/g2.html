@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 
+	원형 그라데이션
+		. radial-gradient(모양 크기(반지름) at 시작점(원의 중심x,y), 색상, 색상,,)
+		. 모양: circle, ellipse
+		. 크기:
+				closest-side : circle	- 원의 중심점에서 가까운 박스의 변에 내접
+							   ellipse	- 타원의 중심에서 가까운 박스의 변에 내접
+				farthest-side: circle	- 원 가장 먼 변에 내접
+							   ellipse	- 타원 가장 먼 변에 내접
+				farthest-corner: 원 또는 타원의 중심에서 가장 먼 박스의 모서리에 내접
+				closest-corner : 가장 가까운 모서리에 내접
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#circle1{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				color: white;
+				text-align: center;
+
+				background: radial-gradient(circle 40px at 60px 50px, white, black);
+			}
+			#circle2{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				left: 450px;
+				top: 10px;
+				color: white;
+				text-align: center;
+
+				background: radial-gradient(circle closest-side at center, white, red 55%, black);
+			}
+
+			#ellipse1{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				left: 10px;
+				top: 250px;
+				color: white;
+				text-align: center;
+
+				background: radial-gradient(ellipse 150px 80px at 20% 90%, white, black);	/* 크기가 150px에 80px */
+			}
+
+			#ellipse2{
+				width: 400px;
+				height: 200px;
+				position: absolute;
+				left: 450px;
+				top: 250px;
+				color: white;
+				text-align: center;
+
+				background: radial-gradient(ellipse farthest-corner at center, white, red 55%, yellow 20%, black);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="circle1">위치와 크기 지정 원</div>
+			<div id="circle2">가장 가까운 변에 내접한 원</div>
+		</div>
+		<div class="container">
+			<div id="ellipse1">위치와 크기 지정 타원</div>
+			<div id="ellipse2">가장 가까운 변에 내접한 타원</div>
+		</div>
+		
+	</body>
+</html>

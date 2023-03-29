@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 
+	선형 그라데이션
+		- linear-gradient(방향, 색상%, 색상..)
+					
+					 0도
+	to top left		to top
+
+	to left	270도			90도 to right
+
+					180도	  to bottom right
+				  to bottom
+		
+	시작점 0 --------그라데이션------------ 종료점
+	red 0%		orange 10%	  ,,,	blue 100%
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			div{
+				margin: 10px;
+				width: 250px;
+				height: 120px;
+				color: #ffff00;
+				font-family: Arial, Helvetica, sans-serif;
+				font-weight: bold;
+				box-shadow: 2px 2px 5px black;
+			}
+			#sample1{
+				background: linear-gradient(teal,navy,red,yellow);
+			}
+			#sample2{
+				background: linear-gradient(to bottom right, teal, navy);
+			}
+			#sample3{
+				background: linear-gradient(to bottom right, navy,teal);
+			}
+			#sample4{
+				background: linear-gradient(to top right, white, teal 20%);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sample1">sample1</div>
+		<div id="sample2">sample2</div>
+		<div id="sample3">sample3</div>
+		<div id="sample4">sample4</div>
+		
+	</body>
+</html>

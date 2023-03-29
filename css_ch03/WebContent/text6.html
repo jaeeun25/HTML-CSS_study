@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 
+	text-transform
+		. none
+		. capitalize: 첫글자 대문자
+		. uppercase: 모두 대문자
+		. lowercase: 모두 소문자
+	font-variant
+		. none
+		. small-caps: 작은 글자의 대문자로
+		. inherit: 부모기본 값을 강제 상속
+		. initial: 기본값
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#style1{text-transform: capitalize;}
+			#style2{text-transform: uppercase;}
+			#style3{text-transform: lowercase;}
+			#style4{font-variant: small-caps;}
+			#fstyle4Font{font-variant: inherit;}
+		</style>
+	</head>
+	<body>
+		<!-- 첫글자 대문자 -->
+		<p id="style1">life is venture or nothing</p>
+
+		<!-- 모두 대문자 -->
+		<p id="style2">a rolling stone gethers no moss</p>
+
+		<!-- 모두 소문자 -->
+		<p id="style3">PUT OFF FOR ONE DAY AND THEN DAYS WILL PASS</p>
+
+		<!-- 상속 > 작은 대문자 -->
+		<p id="style4"><font id="style4Font">a rolling sthone gathers no moss</font></p>
+	</body>
+</html>
