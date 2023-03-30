@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- 
+	border-width : 1px 2px 3px 4px	: 좌상 우상 우하 좌하
+	border-width : 1px 2px 3px		: 상, 좌우, 하
+	border-width : 1px 2px			: 상하, 좌우
+	border-width : 1px				: 전체 
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			p{
+				text-align: center;
+				color: white;
+				font-weight: bolder;
+				width: 150px;
+				padding: 20px;
+
+				border-width: 10px;
+				border-color: orange;
+				border-style: solid;
+				border-radius: 10px;
+				background-color: #1ddb16;
+			}
+			em{
+				font-size: 1.2em;
+				font-style: normal;
+			}
+			.border1{border-width: 3px 6px 10px 20px;}		/* 상 우 하 좌 */
+			.border2{
+				border-top-width: thin;
+				border-right-width: medium;
+				border-bottom-width: thick;
+				border-left-width: 10px;
+			}
+			.border3{border-width: 20px;}
+		</style>
+	</head>
+	<body>
+		<p>네이버 로그인(표준)</p>
+		<p class="border1"><em>로그인(border1)</em></p>
+		<p class="border2"><em>로그인(border2)</em></p>
+		<p class="border3"><em>로그인(border3)</em></p>
+	</body>
+</html>
