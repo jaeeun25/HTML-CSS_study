@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			ul{
+
+			}
+			li{
+
+			}
+			ul :nth-child(3){border:1px solid blue;}	/* 3번째 자식 */
+			.sample :last-child{border:1px solid red;}
+			ul :first-child{border: 2px solid orange;}
+			ul :nth-child(3n+2){border: 2px solid green;}	/* n=0,1,2..일때 그 값에 해당하는 번째의 자식 (여기서는 2,5)*/
+			ul :nth-child(even){background-color: yellow;}	/* 짝수번째 자식만 */
+		</style>
+	</head>
+	<body>
+		<ul class="sample child">
+			<li>child1(first)</li>
+			<li>child2</li>
+			<li>child3</li>
+			<li>child4</li>
+			<li>child5</li>
+			<li>child6</li>
+			<li>child7(last)</li>
+		</ul>
+	</body>
+</html>

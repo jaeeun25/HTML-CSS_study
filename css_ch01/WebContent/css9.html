@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			/* 기본상태 */
+			div{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				width: 800px; height: 300px; 
+				color: red;
+				font-size: 20px;
+				border: 5px dashed blue;
+			}
+
+			#a{
+				color:blue;
+				border:inherit;		/* inherit: 상속 */
+			}
+			#b{
+				color: initial;		/* initial: 초기화(상속 거부) */
+				border:initial;
+
+			}
+			#c{
+				color: initial;		/* initial: 초기화(상속 거부) */
+				color: unset;		/* unset: 다시 상속 */
+				border: inherit;	/* inherit: 상속 */
+				border: unset;		/* unset: 다시 상속 거부(앞에 상속을 받냐 안받냐에 따라 다시 상속받을지 않받을지 결정됨)*/
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p id='a'>CSS에 오신 것을 환영합니다.</p>
+			<p id='b'>CSS에 오신 것을 환영합니다.</p>
+			<p id='c'>CSS에 오신 것을 환영합니다.</p>
+		</div>
+	</body>
+</html>

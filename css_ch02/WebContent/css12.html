@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			li[class ^= "member"]{color: blue;}	/* member로 시작하는 */
+			li[class $= "intro"]{color: red;}		/* intro로 끝나는 */
+			li[class *= "intro"]{background-color: yellow;}	/* intro가 들어있는 */
+		</style>
+	</head>
+	<body>
+		<ul class="sample">
+			<li class="intromember">intro</li>
+			<li class="memberintro">memberintro</li>
+			<li class="memberintono">memberintono</li>
+		</ul>
+	</body>
+</html>

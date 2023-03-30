@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			div{
+				margin: 10px;
+				padding: 10px;
+				color: #fff;
+				font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+				font-size: 50vh;
+			}
+
+			@media only screen and (max-width: 600px){		/* 최대 600px일 때 까지  */
+				body{
+					background-color: darkgreen;
+				}
+			}
+			@media not screen and (max-width: 600px){
+				body{
+					background-color: lemonchiffon;
+				}
+			}
+			@media all and (orientation: portrait){			/* 모든 장치가 세로방향일경우 */
+				#sample{
+					color: orange;
+					text-shadow: white 20px 10px;
+				}
+			}
+			@media screen and (orientation: landscape){
+				#sample{
+					color: white;
+					text-shadow: darkgray 10px 10px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sample">WIDTH</div>
+	</body>
+</html>

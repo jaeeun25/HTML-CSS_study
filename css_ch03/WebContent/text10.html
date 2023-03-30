@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			h2{
+				width: 600px;
+				height: 200px;
+				background-color: #f0f0f0;
+				font-size: 40px;
+
+				position: relative;
+				margin: 2px auto;	/* 좌우 auto로 중간에 정렬 */
+				text-align: center;
+			}
+			#text1{
+				text-shadow: 2px 2px 3px #999;
+			}
+			#text2{
+				color: #fff;
+				text-shadow: 0 0 7px #999;
+			}
+			#text3{
+				color: #ccc;
+				text-shadow: -1px -1px 0 #fff,	/* -도 줄 수 있다! */
+							 1px 1px 0 #aaa
+			}
+			#text4{
+				color: #ccc;
+				text-shadow: -1px -1px 0 #aaa,
+							 1px 1px 0 #fff;
+			}
+			#text5{
+				color: #fff;
+				text-shadow: 1px 1px 0 #999,
+							 -1px 1px 0 #999,
+							 1px 1px 0 #999,
+							 -1px -1px 0 #999;
+
+			}
+			#text6{
+				color: #fff;
+				background-color: black;
+				text-shadow: 0 0 5px #fff,
+							 0 0 13px #f0f,
+							 0 0 13px #f0f,
+							 0 0 13px #f0f,
+							 0 0 13px #f0f;
+							 
+				
+			}
+		</style>
+	</head>
+	<body>
+			<h2 id="text1">Drop Shadow(그림자)</h2>
+			<h2 id="text2">Grow(광채)</h2>
+			<h2 id="text3">Bevel(도두라짐)</h2>
+			<h2 id="text4">Embos(오목새김)</h2>
+			<h2 id="text5">Strock</h2>
+			<h2 id="text6">Neon(발광)</h2>
+	</body>
+</html>

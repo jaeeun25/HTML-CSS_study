@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			/* 
+				. 1 첫번째 자식 글자색 빨간색
+				. 2 2번째 자식 외곽선을 검을색 1px로
+				. 4 마지막 자식 배경색을 노란색
+				. 5 1번째 자식 파랑색 글자
+				. 6 마지막 자식 빨간색 글자
+				. 7~10: 짝수번째는 파란색 외곽에 노랑색 배경
+						홀수번째는 발깐색 외곽에 오렌지색 배경
+			 */
+
+			.box :first-child{color: #f00;}
+			.box :nth-child(2){border: 1px solid #000;}
+			.box :last-child{background-color: yellow;}
+			.box+div :first-child{color: #00f;}
+			.box+div :last-child{color: #f00;}
+
+			.box+div+div :nth-child(even){border: 1px solid #00f; background-color: yellow;}
+			.box+div+div :nth-child(2n+1){border: 1px solid #f00; background-color: orange;}
+			
+			/* div 없는 경우 */
+			body > p:nth-child(even){border: 1px solid #00f; background-color: yellow;}
+			body > p:nth-child(2n+1){border: 1px solid #f00; background-color: orange;}
+						
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>COMPANY1</p>
+			<p>PROEUCT2</p>
+			<p>SERVICE3</p>
+			<p>OTHER4</p>
+		</div>
+		<div>
+			<p>COMPANY5</p>
+			<p>PROEUCT6</p>
+		</div>
+		<div>
+			<p>COMPANY7</p>
+			<p>PROEUCT8</p>
+			<p>SERVICE9</p>
+			<p>OTHER10</p>
+		</div>
+	</body>
+</html>

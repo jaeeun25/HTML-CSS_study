@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 
+	다단편집
+		. float이나 position을 이용하지 않고도 멀티 컬럼을 지원한다.
+		. 속성
+			- column-count: 3 -> 박스의 내용을 3단으로 나눈다.
+			- column-gap: 10px -> 컬럼 간의 간격을 10px 둔다.
+			- column-rule: 2px dotted brown -> border 일괄지정과 동일
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+      <title>Insert title here</title>
+      <style>
+         *{margin: 0; padding: 0;}
+         li{list-style: none;}
+         body{color: #333;}
+         h1, p{padding: 15px;}
+
+         .gmother{
+            font: 12px Arial, Gulim;
+            background: pink;
+            text-align: justify;
+            width: 900px;
+            box-shadow: 2px 2px 10px black;  /* x축, y축, 두께(흐리기) 색상 */
+
+            column-count: 4;
+            column-gap: 2em;
+            column-rule: 2px solid black;
+
+
+         }
+ 
+      </style>
+	</head>
+	<body>
+		<h1>그냥 영어</h1>
+		<p class="gmother">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+			Nibh praesent tristique magna sit amet purus gravida quis blandit. Dui accumsan sit amet nulla facilisi.<br>
+			Sagittis orci a scelerisque purus semper. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Felis eget velit aliquet sagittis.<br>
+			Magna fermentum iaculis eu non diam phasellus vestibulum lorem. Augue lacus viverra vitae congue eu consequat ac felis donec.<br>
+			Sit amet mauris commodo quis imperdiet massa. Sit amet aliquam id diam maecenas ultricies mi eget mauris.<br>
+			Pellentesque eu tincidunt tortor aliquam nulla. Volutpat diam ut venenatis tellus in metus vulputate eu.<br>
+			Ultricies mi eget mauris pharetra et ultrices neque. Tempus quam pellentesque nec nam aliquam sem et tortor.
+      </p>
+	</body>
+</html>

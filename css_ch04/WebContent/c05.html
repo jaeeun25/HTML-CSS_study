@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		div{
+			margin: 20px;
+			padding: 20px;
+			border: 15px solid rgba(139,0,0,0.5);
+			width: 800px;
+			height: 500px;
+			background-image: url("./img/file.gif");
+			background-repeat: no-repeat;
+		}
+
+		code{
+			color: #fff;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		#sample1{
+			background-size: contain;
+		}
+		#sample2{
+			background-size: cover;
+		}
+		#smaple3{
+			background-size: auto auto;
+		}
+		#smaple4{
+			background-size: 100% 100%;
+		}
+	</style>
+	</head>
+	<body>
+		<div id="sample1"><code>contain</code></div>
+		<div id="sample2"><code>cover</code></div>
+		<div id="sample3"><code>auto 90px</code></div>
+		<div id="sample4"><code>100% 100%</code></div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+	box-shadow
+		- 가로 세로 blur-radius 그림자의크기(디폴트는 0) 색상|inset
+
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 170px;
+				height: 80px;
+				margin: 380px auto;
+				padding-top: 15px;
+				box-sizing: border-box;
+				border-radius: 10px;
+				background-color: aqua;
+				box-shadow: 0 0 45px darkblue inset,
+							0 0 35px darkblue inset,
+							0 0 25px darkblue inset,
+							0 0 15px darkblue inset;
+			}
+			h1{
+				text-align: center;
+			}
+			div:hover{
+				background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>ICON</h1>
+		</div>
+	</body>
+</html>
