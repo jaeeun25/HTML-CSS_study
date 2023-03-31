@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			body{
+				font-family: Arial, Helvetica, sans-serif;
+				font: 12px/1.5em Arial;		/* 글자 크기/줄 간 */
+				margin: 10px;
+			}
+			#container{
+				width: 560px;
+				border: 1px solid blue;
+				background-color: lightyellow;
+				
+				/* clear할 수 있는 박스가 없어서 container가 제대로 안나옴 */
+				/* float: left; */
+				/* overflow: hidden; */
+				/* height: 170px; */
+			}
+			/* 가상요소 추가해서도 가능 */
+			#container:after{
+				content:"";
+				display: block;
+				clear:both;
+			}
+
+			.menu{
+				float:left;
+				width: 130px;
+				padding: 10px;
+			}
+			.content{
+				float:right;
+				width: 350px;
+				padding: 10px;
+				border-left: 1px solid #ccc;
+			}
+			address{
+				font-size: normal;
+				padding: 10px;
+			}
+			/* 내가 한거
+			#container{
+				background-color: lemonchiffon;
+				border: 1px solid blue;
+				width: 600px;
+				height: 200px;
+			}
+			ul{
+				list-style: none;
+				padding:0 10px;
+			}
+			.menu{
+				width: 200px;
+				height:200px;
+				border-right: 1px solid lightgray;
+				float: left;
+			}
+			.content{
+				padding: 8px 10px;
+				float: left;
+				width: 370px;
+				line-height: 26px;
+			}
+			#footer{
+				padding: 10px;
+			}
+			*/
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="menu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">제품안내</a></li>
+					<li><a href="#">커뮤니티</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<p>
+					이 제품은 어댑터와 본체가 분리되어 있는 대부분의 제품들이
+					갖는 불편함을 해소하는 데 큰 기여를 하고 있다. 가장 많은
+					불편함은 어댑터 분실인데 이 제품은 usb크기의 잭만 꽂으면
+					센서로 자동 충전되어 충전도 휴대도 간편한 복덩어리 노트북으로
+					불리고 있다. 이런 노트북은 이미 시중에 판매되고 있다.
+				</p>
+			</div>
+		</div>
+		<div id="footer">
+			<address>&Copy; 2023 Copyright All right reserved</address>
+		</div>
+	</body>
+</html>

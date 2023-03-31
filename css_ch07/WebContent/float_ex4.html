@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#container{
+				width: 700px;
+				margin: 70px auto;
+				background-color: aliceblue;
+			}
+			#container:after{
+				content:"";
+				display: block;
+				clear:both;
+			}
+			#main{
+				margin: 0 10px;
+			}
+			h1{
+				background-color: lightgray;
+				padding: 10px;
+				margin: 0;
+				text-align: center;
+
+			}
+			span{
+				font-weight: bolder;
+			}
+			
+			h3{
+				color: white;
+				font-size: 2.2em;
+				text-align: center;
+				height: 100px;
+				
+				margin: 0 20px;
+			}
+			#box1, #box2, #box3, #box4{
+				width: 140px;
+				float: left;
+			}
+			#box1>h3{background-color: red;}
+			#box2>h3{background-color: blue;}
+			#box3>h3{background-color: orange;}
+			#box4>h3{background-color: olive;}
+			p{
+				text-align: justify;
+			}
+			#box2{
+				margin-left: 20px;
+			}
+
+			#box3{
+				margin-left: 20px;
+			}
+			
+			#box4{
+				margin-left: 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<h1>나의 아름다운 정원</h1>
+			<div id="main">
+				<p>사람들이 선호하는 꽃들은 어떤 것들일까.. 아마 스스로에게 <span>자신감을 북돋워 주는</span>표정 있는 꽃들일 것이다.</p>
+				<div id="box1">
+					<h3>튜울립</h3>
+					<p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다. 붉은색이 단연 으뜸이며, 한 송이만 있어도 빼어나다.</p>
+				</div>
+				<div id="box2">
+					<h3>제비꽃</h3>
+					<p>드물게 푸른색을 띠고 있으며 작지만 시원해 보이는 어린꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.</p>
+				</div>
+				<div id="box3">
+					<h3>호박꽃</h3>
+					<p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로 매우 완숙한 이미지를 출기는 꽃이다.</p>
+				</div>
+				<div id="box4">
+					<h3>해바라기</h3>
+					<p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에 속하며 송이가 적어야 제격이다.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

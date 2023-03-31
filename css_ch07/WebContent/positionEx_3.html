@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#container{
+				width: 410px;
+				height: 60px;
+				position: relative;
+			}
+			.box{
+				background-color:black;
+				color:magenta;
+				font: bolder 1.3em Arial;
+				width: 60px;
+				height: 60px;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+
+				position: relative;
+			}
+			#box2{left: 70px; bottom: 60px;}
+			#box3{left: 140px; bottom: 120px;}
+			#box4{left: 210px; bottom: 180px;}
+			#box5{left: 280px; bottom: 240px;}
+			#box6{left: 350px; bottom: 300px;}
+
+			#box2:hover{
+				background-color: magenta;
+				color:black;
+				left: 65px;
+				bottom: 75px;
+			}
+			#box5:hover{
+				background-color: magenta;
+				color:black;
+				left: 285px;
+				bottom: 225px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>상대배치, releative</h1>
+		</div>
+		<hr>
+		<div id="container">
+			<p id="box1" class="box">T</p>
+			<p id="box2" class="box">H</p>
+			<p id="box3" class="box">A</p>
+			<p id="box4" class="box">N</p>
+			<p id="box5" class="box">K</p>
+			<p id="box6" class="box">S</p>
+		</div>
+	</body>
+</html>

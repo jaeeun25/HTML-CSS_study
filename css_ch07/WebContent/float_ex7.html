@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{margin: 0; padding: 0;}
+			body{
+				text-align: center;
+				margin: 0 3px;
+				width: 1899px;
+				font: 12px Arial;
+			}
+			header, footer{
+				background-color: darkgray;
+				color: white;
+			}
+			header{height: 150px;}
+			
+			section{
+				background-color: lightgray;
+				box-sizing: border-box;
+				height: 745px;
+				margin: 2px;
+			}
+			#box1{
+				float: left;
+				width:  390px;
+			}
+			#box2{
+				float: left;
+				width:  950px;
+			}			
+			#box3{
+				float: right;
+				width: 545px;
+			}
+
+			.inner, .innerB{
+				background-color: blue;
+			}
+			.inner{
+				float: left;
+				width: 270px;
+				height: 120px;
+				margin: 90px 20px 180px 20px;
+			}
+			.innerB{
+				clear:both;
+				width: 895px;
+				height: 300px;
+				margin: 0 15px;
+			}
+			#boxs{
+				margin: 0 auto;
+			}
+
+			footer{
+				height: 60px;
+				clear:both
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<p>헤더박스</p>
+		</header>
+		<section id="box1">
+			<p>플로팅박스1</p>
+		</section>
+		<section id="box2">
+			<p>플로팅박스2</p>
+			<div id="boxs">
+				<div class="inner"> </div>
+				<div class="inner"> </div>
+				<div class="inner"> </div>
+				<div class="innerB"> </div>
+			</div>
+		</section>
+		<section id="box3">
+			<p>플로팅박스3</p>
+		</section>
+		<footer>
+			<p>풋터박스</p>
+		</footer>
+	</body>
+</html>

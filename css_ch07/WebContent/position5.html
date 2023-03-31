@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+	flex
+		. display: flex
+		. flex-direction: row, column, row-reverse, column-reverse
+		. justify-content: center,,		- 주축방향의 정렬
+		. flex-wrap: wrap - 꽉차면 자동으로 밑으로 줄바꿈해서 내림
+		. align-items: center,
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			div{
+				background-color: skyblue;
+				height: 800px;
+				color: white;
+				font-size: 50px;
+			}
+			#container{
+				margin: 0 auto;
+				width: 1500px;
+				height: 1000px;
+				background-color: skyblue;
+			}
+			#flex_box{
+				display:flex;
+				flex-direction: row-reverse;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			#flex_box>div{
+				margin: 2.2px;
+				width: 300px;
+				height: 200px;
+				text-align: center;
+				border-width: 3px;
+				border-color: red;
+				background-color: blue;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div id="conteainer">
+			<div id="flex_box">
+				<div><h1>1</h1></div>
+				<div><h1>2</h1></div>
+				<div><h1>3</h1></div>
+				<div><h1>4</h1></div>
+				<div><h1>1</h1></div>
+				<div><h1>2</h1></div>
+				<div><h1>3</h1></div>
+			</div>
+		</div>
+	</body>
+</html>

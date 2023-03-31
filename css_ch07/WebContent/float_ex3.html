@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			h1{
+				background-color: brown;
+				color:white;
+				font: bolder 2em Arial;
+				padding: 10px;
+				margin: 0;
+				float: left;
+			}
+			#main{
+				text-align: justify;
+				background-color: aliceblue;
+			}
+			#main:after{
+				content:"";
+				display: block;
+				clear:both;
+			}
+			#image{
+				width: 120px;
+				height: 100px;
+				background-image: url("./img/choonsik.gif");
+				background-size: contain;
+				background-repeat: no-repeat;
+				float:right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="main">
+				<h1>금연일지</h1>
+				첫날은 담배냄새가 나지 않아서 좋았고, 다음날은 눈이 맑아진 것 같아 좋았고 그 다음날은 아들에게 당당하게 담배 피우지 말라고 말할 수 있어서 좋았다.
+				<span id="image"></span>
+				개인적인 기호를 범적으로 관리 수도 없는 것이고 금연을 일사분란하게 실행한다는 것은 말도 안되는 일이지만 애연가들 덕분에 그들과 더불어 원치 않게 죽어가는 많은 사람들의 넋은 누가 달래줘야할까?
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#container{
+				background-color: pink;
+				width: 660px;
+			}
+			#container:after{
+				content:"";
+				display: block;
+				clear:both;
+			}
+			.box{
+				background-color: lightcyan;
+				width: 120px;
+				height: 70px;
+				text-align: center;
+				float: left;
+				margin: 0 0 10px 10px;
+				line-height: 15px;
+			}
+			.line{
+				background-color: darkcyan;
+				widows: inherit;
+				height: 10px;
+			}
+			.line+p{
+				margin: 5px 0 0;
+
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box">
+				<div class="line"></div>
+				<p>회사소개</p>
+				<p>COMPANY</p>
+			</div>
+			<div class="box">
+				<div class="line"></div>
+				<p>제품안내</p>
+				<p>PRODUCT</p>
+			</div>
+			<div class="box">
+				<div class="line"></div>
+				<p>고객지원</p>
+				<p>CUSTOMER</p>
+			</div>
+			<div class="box">
+				<div class="line"></div>
+				<p>채용정보</p>
+				<p>RECRUIT</p>
+			</div>
+			<div class="box">
+				<div class="line"></div>
+				<p>커뮤니티</p>
+				<p>COMMUNITY</p>
+			</div>
+
+		</div>
+	</body>
+</html>
