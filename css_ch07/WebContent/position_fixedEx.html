@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{margin:0; padding: 0}
+			ul{list-style: none; position: fixed;}
+			li{width: 130px; height: 30px;}
+			#fix {right:0px;}
+			#bottom{bottom:0px;}
+			#fix>li{
+				background-color: lightgray;
+				margin-top: 5px;
+			}
+			#bottom>li{
+				display: inline-block;
+				background-color: gray;
+				color: white;
+			}
+		</style>
+	<body>
+		<ul id="fix">
+			<li>고정메뉴1</li>
+			<li>고정메뉴2</li>
+			<li>고정메뉴3</li>
+			<li>고정메뉴4</li>
+		</ul>
+		<ul id="bottom">
+			<li>하단메뉴1</li>
+			<li>하단메뉴2</li>
+			<li>하단메뉴3</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{margin: 0; padding: 0;}
+			ul{
+				list-style: none;
+				position: relative;
+			}
+			li{
+				width: 225px;
+				height: 160px;
+				background-color: lightpink;
+				text-align: center;
+			}
+			#wrap{
+				width: 960px;
+				margin: 100px auto;
+
+			}
+			header{
+				text-align: center;
+				background-color: palevioletred;
+				margin-bottom: 20px;
+			}
+			section li{
+				float: left;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+
+			/* 방법1 
+			section{
+				margin-right: -20px;
+			}
+			*/
+			/* 방법2 */
+			ul :nth-child(4n+4){
+				margin-right: 0px;
+			}
+
+			ul :nth-child(7){
+				position: relative;
+				top: -180px;
+				right:-490px;
+			}
+			footer{
+				background-color: #00f;
+				text-align: center;
+				color:white;
+				clear:both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<h1>Header Area</h1>				
+			</header>
+			<section>
+				<ul>
+					<li><br><br><br>225x160(1)</li>
+					<li><br><br><br>225x160(2)</li>
+					<li><br><br><br>225x160(3)</li>
+					<li><br><br><br>225x160(4)</li>
+					<li><br><br><br>225x160(5)</li>
+					<li><br><br><br>225x160(6)</li>
+					<li><br><br><br>225x160(7)</li>
+					<li><br><br><br>225x160(8)</li>
+					<li><br><br><br>225x160(9)</li>
+					<li><br><br><br>225x160(10)</li>
+				</ul>
+			</section>
+			<footer>
+				<h1>Footer Area</h1>
+			</footer>
+		</div>
+	</body>
+</html>

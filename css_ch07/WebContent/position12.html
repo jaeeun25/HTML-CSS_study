@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			body{
+				background: url("./img/choonsik.gif") top left / 100% 900px no-repeat;
+			}
+			#parent{
+				background: darkgray;
+				width: 200px;
+				height: 50px;
+				position: relative;
+			}
+			#child{
+				background:lightgray;
+				opacity: 0.7;
+				width: 150px;
+				height: 40px;
+				position: absolute;
+				top: 40px;
+				left: 20px;
+
+				display: none;			/* 안보인다 */
+				z-index: -1;
+			}
+			#parent:hover #child{
+				display: block;
+			}
+			.menu{
+				background: lightgray;
+				width: 150px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+			}
+			#child .menu:hover{
+				background: skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="parent">
+			<div style="text-align: center; padding: 10px;">메뉴항목</div>
+			<div id="child">
+				<div class="menu">서브메뉴1</div>
+				<div class="menu">서브메뉴2</div>
+				<div class="menu">서브메뉴3</div>
+			</div>
+		</div>
+	</body>
+</html>
