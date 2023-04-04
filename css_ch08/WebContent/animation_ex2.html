@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{margin:0; padding: 0;}
+			body{background-color: #000a;;}
+			iframe{
+				width: 640px;
+				height:640px;
+				border-radius: 15%;
+				position: absolute;
+				top:-350px;
+			}
+			.card{
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 200px;
+				height: 200px;
+				border-radius: 15%;
+				display: inline-block;
+				padding: 20px;
+				position: absolute;
+				transform: rotateY(calc(var(--i) * 1deg)) translateZ(400px);
+				text-decoration: none;
+				color: black;
+			}
+			#c1{
+				background-image: url("./img/choon1.jpg");
+				--i: 70;
+			}
+			#c2{
+				background-image: url("./img/choon2.png");
+				--i: 140;
+				
+			}
+			#c3{
+				background-image: url("./img/choon3.png");
+				--i: 210;
+				
+			}
+			#c4{
+				background-image: url("./img/choon4.png");
+				--i: 280;
+			
+				transform-style: preserve-3d;}
+			#c5{
+				background-image: url("./img/choon5.png");
+				--i: 350;
+			}
+
+			#c1:focus,#c2:focus,#c3:focus,#c4:focus,#c5:focus{
+				opacity: 0;
+			}
+			body:focus iframe{
+				opacity: 0;
+			}
+			#choonsik{
+				display: flex;
+				position:relative;
+				top: 400px;
+				animation: choon 10s linear;
+				animation-iteration-count: infinite;
+				justify-content: center;
+				transform-style: preserve-3d;
+			}
+			@keyframes choon{
+				from {
+					transform: perspective(1000px)  rotateY(0deg);
+				}
+				to {
+					transform: perspective(1000px)  rotateY(360deg);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="choonsik">
+			<a id="c1" class="card" href="./img/choon1.jpg" target="choon">C</a>
+			<a id="c2" class="card" href="./img/choon2.png" target="choon">H</a>
+			<a id="c3" class="card" href="./img/choon3.png" target="choon">O</a>
+			<a id="c4" class="card" href="./img/choon4.png" target="choon">O</a>
+			<a id="c5" class="card" href="./img/choon5.png" target="choon">N</a>
+			<iframe name="choon"></iframe>
+		</div>
+	</body>
+</html>

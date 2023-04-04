@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			div[id]{
+				display: inline-block;
+				background-color: yellowgreen;
+				color: white;
+				padding: 0 5px;
+				text-align: center;
+			}
+			#test1{transform: rotate(20deg);}
+			#test1:hover{transform:rotate(80deg)}
+			#test2{transform: skew(0, -20deg);}
+			#test3{transform: translateY(100px);}
+			#test4{transform: scale(3 ,1);}
+			img{
+				width: 400px;
+				height: 400px;
+				border-radius: 50% 50%;
+			}
+
+			img[alt]{
+				/* transform: translate(30px, 50px);
+				transform: scale(1.5, 1.7);
+				transform: rotate(90deg);*/
+
+				animation: myanimation1 10s linear 2s 3 normal;
+			}							  /* 일정한속도로 시작전딜레이2초 반복횟수3번 애니메이션방향  */
+
+			@keyframes myanimation1{	/* 0~100% 0은 시작, 100은 끝 */
+				20%{
+					transform: translate(30px, 50px);
+				}
+				40%{
+					transform: scale(0.5, 0.7);
+					color:blue;
+				}
+				10%{
+					transform: rotate(180deg);
+				}
+				10%{
+					width: 500px;
+				}
+				20%{	/* 위 20%와 동시에 작동 */
+					height: 500px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2>다양한 Transform</h2>
+			<p>아래는 회전(rotate), 기울임(skew), 이동(translate), 확대/축소(scacale)가 적용된 사례이다. 또한 마우스를 올리면 추가적 변환이 일어난다.</p>
+			<hr>
+			<div id="test1">roate 20deg</div>
+			<div id="test2">skew(0, -20deg)</div>
+			<div id="test3">translateY(100px)</div>
+			<div id="test4">scale(3,1)</div>
+			<h2>실습해 봅니다.</h2>
+			<img src="./img/choonsik.gif" alt="">
+		</div>
+	</body>
+</html>

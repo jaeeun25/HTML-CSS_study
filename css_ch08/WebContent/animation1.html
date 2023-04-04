@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 
+
+	1. 방법1
+		. 애니메이션의 내용을 작성해 놓는다.
+			@keyframes 애니메이션이름{
+				0% | from{font-size: 0%; border: ; color: ;}
+				50%
+				100% | to {스타일; 스타일; 스타일; ,,}
+			}
+
+		. 적용
+			태그{
+				animation: 애니메이션 이름
+				animation-duration: 시간/1회
+				animation-iteration-count: 애니메이션 반복횟수(infinite)
+
+			}
+
+	2. 방법2 - 전환(transition)
+		. 정의
+			태그{
+				transition: 전환할속성 전환시간
+				transition: font-size 5s
+
+				* 전환할 속성은 css에서 사용하는 속성들
+			}
+
+		. 적용
+			태그:hover{
+				font-size: 200%
+			}
+
+	3. 방법3 - 변환(transform)
+		. 적용1
+			태그{
+				transform: translate(x, y) | translateX(n) ,, 	- 이동
+						   scale(w, h) | scaleX(n) ,, 			- 확대/축소
+						   rotate(각도(30deg), 각도) | rotateX(각도)- 회전
+						   skew(x각도, y각도) | skewX(각도)			- 기울임
+				
+				transform-origin: left top						- 중심점
+			}
+
+		. 적용2
+			@keyframes 이름{
+				form(transform: rotateX(20deg), rotateY(360deg)}
+				to { trangromr: rotateX(22deg), rotateY(60deg)}
+			}
+ -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			#a>img{
+				margin: 100px;
+				width: 200px;
+				height: 200px;
+
+				transform: translate(500px, 300px);
+				transform: rotate(90deg);
+				transform: scale(0.2, 0.3);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="a">
+			<img alt="" src="img/choonsik.gif">
+		</div>
+	</body>
+</html>

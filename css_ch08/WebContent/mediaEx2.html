@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{margin:0; padding:0;}
+			body{
+				text-align: center;
+			}
+			#choon1{background-image: url("./img/choon1.jpg");}
+			#choon2{background-image: url("./img/choon2.png");}
+			#choon3{background-image: url("./img/choon3.png");}
+			#choon4{background-image: url("./img/choon4.png");}
+			#choon5{background-image: url("./img/choon5.png");}
+		
+			@media screen and (min-width:768px) and (max-width: 1719px) {
+				header{
+					margin: 10px 0;
+				}
+				footer{
+					font-size: 0.8em;
+					background-color: darkgray;
+					position:fixed;
+					bottom:0;
+					width: 100%;
+					height: 100px;
+				}
+				footer>p{
+					margin-top: 35px;
+				}
+				#box{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					flex-wrap: wrap;
+					align-items: flex-start;
+					width: 500px;
+					margin: 0 auto;
+				}
+				.c{
+					background-size: contain;
+					width: 200px;
+					height: 200px;
+					text-align: right;
+					vertical-align: bottom;
+					color: white;
+					text-shadow: 2px 2px 2px black;
+					padding: 7px;
+					border:1px solid gray;
+					margin: 2px;
+				}
+				#choon5{width: 421px;}
+			}
+			@media screen and (min-width:1720px){
+				header{
+					margin: 20px 0;
+				}
+				footer{
+					font-size: 0.8em;
+					background-color: darkgray;
+					position:fixed;
+					bottom:0;
+					width: 100%;
+					height: 100px;
+				}
+				footer>p{
+					margin-top: 35px;
+				}
+				#box{
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					flex-wrap: wrap;
+					align-items: flex-start;
+					width: 1200px;
+					margin: 0 auto;
+				}
+				.c{
+					background-size: contain;
+					width: 300px;
+					height: 300px;
+					text-align: right;
+					vertical-align: bottom;
+					color: white;
+					text-shadow: 2px 2px 2px black;
+					padding: 7px;
+					border:1px solid gray;
+					margin: 2px;
+				}
+				#choon5{width: 620px;}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>오늘의 춘식</h1>
+		</header>
+		<div id="container">
+			<div id="box">
+				<div id="choon1" class="c">요정 춘식</div>
+				<div id="choon2" class="c">영애 춘식</div>
+				<div id="choon3" class="c">개츠비 춘식</div>
+				<div id="choon4" class="c">마법사 춘식</div>
+				<div id="choon5" class="c">군밤 춘식</div>
+			</div>
+		</div>
+		<footer>
+			<p>오늘의 춘식</p>
+		</footer>
+	</body>
+</html>

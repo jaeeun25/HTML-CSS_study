@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			*{margin:0; padding:0;}
+			body{background-color: lightgray;}
+			@media screen and (min-width:768px) and (max-width: 1719px) {
+				#container{
+					width: 320px;
+					margin: 50px auto;
+				}
+				img{
+					width: 300px;
+					height: 300px;
+				}
+				.card{
+					position: relative;
+					width: 300px;
+					height: 400px;
+					margin: 20px 10px;
+					border:1px solid #000;
+					background-color: #fff;
+				}
+				.word{
+					position:absolute;
+					left: 20px;
+					top: 300px;
+					padding: 10px;
+					text-align: center;
+				}
+			}
+			@media screen and (min-width:1720px){
+				#container{
+					width: 1710px;
+					margin: 50px auto;
+				}
+				img{
+					width: 300px;
+					height: 300px;
+				}
+				.card{
+					position: relative;
+					float: left;
+					width: 540px;
+					height: 300px;
+					margin: 10px;
+					border:1px solid #000;
+					background-color: #fff;
+				}
+				.word{
+					position:absolute;
+					left: 285px;
+					top: 50px;
+					width: 270px;
+					text-align: center;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="card">
+				<img src="./img/choon5.png">
+				<div class="word">
+					<h2>🌰🌰군밤춘식🌰🌰</h2>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./img/choon3.png">
+				<div class="word">
+					<h2>🍷🍷개츠비춘식🍷🍷</h2>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./img/choon2.png">
+				<div class="word">
+					<h2>👑👑영애춘식👑👑</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
