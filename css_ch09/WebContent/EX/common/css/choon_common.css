@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.ctitle{
+	padding-top: 5px;
+	padding-left: 5px;
+	border-right: 8px double #9f6793;
+	border-top: 2px solid #9f6793;
+	border-bottom: 2px solid #9f6793;
+	border-left: 8px solid #9f6793;
+}
+.ctitle>a{
+	color: #000;
+}
+
+
+.sec{
+	background: url("../img/line.png") left top repeat-x;
+	background-size: 20px 15px;
+	background-color: lightgoldenrodyellow;
+	padding: 30px;
+	margin-bottom: 10px;
+}
+.sec>h3{
+	padding: 10px 0 5px;
+}
+.sec>h3>span{
+	font-size: 0.85em;
+	font-weight: normal;
+}
+.sec>p{
+	font-size: 0.9em;
+}
+.info{
+	margin: 10px 0 15px 40px;
+	list-style: disc;
+}
+.info li{
+	margin: 0 0 5px
+}
+
+
+.info a{
+	text-decoration: none;
+	font-weight: bolder;
+}
+.sec .click_img{
+	text-align: right;
+	margin: 0 75px 0;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.img{
+	text-align: center;
+	width:100%;
+}
+.img img{
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+}
+.flex_iframe{
+	width: 300px;
+	height: 300px;
+	float: left;
+	border: 3px solid silver;
+	margin-top: 4px;
+}
+#flex_box{
+	display: flex;
+	float: right;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 315px;
+	height: 315px;
+	border: 1px solid #ccc;
+}
+#flex_box li{
+	opacity: 1;
+	margin: 3.7px 0 0;
+}
+#flex_box li:hover{
+	opacity: 0.6;
+}
+#flex_box img{
+	width: 100px;
+	height: 100px;
+}
+.box{
+	width: 90%;
+	height: 35px;
+	background-color: #fed677aa;
+	margin: 0 auto 10px;
+	border:1px solid #ccc;
+	border-radius: 10px;
+}
+.box>p{
+	font-weight: bolder;
+	font-size: 1.1em;
+	text-align: center;
+	padding: 7px 0;
+}
+.teaser{
+	display: none;
+	position: relative;
+	width: 724px;
+	height: 408px;
+	top:0px;
+	left:0px;
+}
+.box:hover .teaser{
+	display: block;
+	z-index:2;
+	top:-340px;
+	left: -35px;
+}
+
+#ryan span, #picture span{
+	font-weight: bolder;
+}
+.plus{
+	clear: both;
+	padding: 10px;
+	text-align: right;
+}
+
+#ryan>ul{
+	margin: 15px;
+	padding: 3px;
+	line-height: 2;
+}
+#ryan img, #ryan ul{float: left;}
+#ryan::after{
+	content: "";
+	display: block;
+	clear: both;
+}
